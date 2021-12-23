@@ -6,8 +6,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+/*body,h1,h2,h3,h4,h5,h6 {font-family: 'Space Mono', monospace}*/
+/*body {font-family: 'Krub', sans-serif}*/
 
 body, html {
   height: 100%;
@@ -18,7 +21,7 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwcNBwcNDQcHBw0HBw0HDQ0HBxsICQ0NFREWFhUREx8YHSgkGBolGxYTITEhJSkrLi4uFyEzODMtNygtLisBCgoKDQ0NFw8PFy0dHx0tLS0tKy0tLTctLS0rLTcrNy0tNzc2LS03LTctKy0rLS0tLSstLS03LS0tLSsrKy0rK//AABEIAKMBNQMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQf/xAAdEAEBAAICAwEAAAAAAAAAAAAAARJRIZERYXEC/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAEFA//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwDUwHJkgAAAAAAAAKCAAAAAAAAAAAAAAAAAAAAAAAAAoAiggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKIoIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqKCAAAAAAAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAoAgAAAKgAAAAAAAAAAAAAAAAAAAKgAAAAAAAAAAAAAqKCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKikVABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUUEAAAAAAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAFEUEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAt4+JlPfXIqiZfnZlNgqpLAAUEQUBBQEFAQUBFAEFAQUBBQEFAQUBBQEFAQUBBQEFAQUBKSTU4AVMZqdL4mp0ACgI//Z");
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEXIrpdmKW2iAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=");
   min-height: 100%;
 }
 
@@ -59,10 +62,11 @@ body, html {
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-black" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">THE SMART INVESTOR</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">THE SMART INVESTOR</span><br>
-    <span class="w3-large">Read more to see how we can help you budget your money to help you prepare for the future.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+    <span class="w3-jumbo w3-hide-small" style="font-family: 'Space Mono', monospace">Hi! I'm Gurman.</span><br>
+    <hr size="500" width="150%" color="tan">
+    <img src="GLetter.png">
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Hi! I'm Gurman.</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" style="font-family: 'Space Mono', monospace">Learn more</a></p>
   </div> 
 </header>
 
@@ -70,6 +74,7 @@ body, html {
 <div class="w3-container" style="padding:128px 16px" id="about">
   <h3 class="w3-center">OUR BUDGETING CALCULATOR</h3>
   <p class="w3-center w3-large">Use this to determine how you can split your yearly income in a way that is financially responsible. We can help you take the first steps to start being financially secure.</p>
+  <p style="font-family:'Courier New'">This is another paragraph.</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
 
   <iframe width="560" height="315"
@@ -108,7 +113,7 @@ body, html {
         <li class="w3-padding-16">
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button onClick="myMSSOnClick()" class="w3-button w3-black w3-padding-large mss.html">Learn More</button>
+          <button onClick="myCPOnClick()" class="w3-button w3-black w3-padding-large competitive.html">Learn More</button>
         </li>
       </ul>
     </div>
@@ -167,8 +172,8 @@ function onClick(element) {
 }
 
 
-  function myMSSOnClick() {
-   document.location.href="mss.html"
+  function myCPOnClick() {
+   document.location.href="competitive.html"
  }
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
