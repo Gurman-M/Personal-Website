@@ -1,0 +1,40 @@
+/*body,h1,h2,h3,h4,h5,h6 {font-family: 'Space Mono', monospace}*/
+/*body {font-family: 'Krub', sans-serif}*/
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  
+  ::selection {
+    /* Change highlight background color to white */
+    background: #000;
+    /* Change highlight text color to light brown */
+    color: #D2B48C;
+  }
+  
+  :hover{
+    /* Change hover text color to black */
+    color: #000;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color:black;
+  }
+  
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEXIrpdmKW2iAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=");
+    min-height: 100%;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
