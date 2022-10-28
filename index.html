@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="g-icon.png">
     <link rel="stylesheet" href="styles.css">
     <title>Gurman's Website</title>
   </head>
@@ -17,32 +17,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&family=Sora:wght@200&display=swap" rel="stylesheet">
 
-/* Full height image header */
 <style>
+
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEXIrpdmKW2iAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=");
+  background-image: url("pixelbg.jpg");
   min-height: 100%;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
 }
+
 </style>
 
 <body>
 
+<!-- Calling external js files -->
+<script src=" nav-hide.js"></script>
+<script src="typewriter-effect.js"></script>
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">HOME</a>
+  <div class="w3-bar w3-light-grey w3-card" id="myNavbar">
+    <a href="index.html" onclick="typeWriter()" class="w3-bar-item w3-button" style="font-family: pixel-title-font;"><font size="5">HOME</font></a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">  
-      <a href="#about" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">ABOUT ME</a>
-      <a href="projects.html" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">PROJECTS</a>
-      <a href="competitive.html" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">COMPETITIVE PROGRAMMING</a>
-      <a href="resume.html" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">RESUME</a>
+    <div class="w3-right w3-hide-small">
+      <a href="index.html#about" class="w3-bar-item w3-button" style="font-family: pixel-title-font;"><font size="5">ABOUT</font></a>
+      <a href="projects.html" class="w3-bar-item w3-button" style="font-family: pixel-title-font;"><font size="5">PROJECTS</font></a>
+      <a href="competitive.html" class="w3-bar-item w3-button" style="font-family: pixel-title-font;"><font size="5">COMPETITIVE PROGRAMMING</font></a>
+      <a href="resume.html" class="w3-bar-item w3-button" style="font-family: pixel-title-font;"><font size="5">RESUME</font></a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -54,7 +59,7 @@
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="#about" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">ABOUT ME</a>
+    <a href="index.html#about" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">ABOUT ME</a>
     <a href="projects.html" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">PROJECTS</a>
     <a href="competitive.html" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">COMPETITIVE PROGRAMMING</a>
     <a href="resume.html" class="w3-bar-item w3-button" style="font-family: 'Archivo Black', sans-serif;">RESUME</a>
@@ -63,30 +68,32 @@
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small" style="font-family: 'Archivo Black', sans-serif;">Hi! I'm Gurman.</span><br> 
+    <span class="w3-jumbo w3-hide-small" style="font-family: smb3-font;" id="name-header"></span><br>
     <hr size="100" width="100%" color="tan">
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Hi! I'm Gurman.</span><br> 
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" style="font-family: 'Sora', sans-serif">Learn more</a></p>
-  </div> <div class="w3-display-right w3-text-black" style="padding:150px"> <img src="GLetter_ccexpress.png" width="700" height="400" alt="G Initial"> </div> 
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" style="font-family: pixel-title-font"><font size = "5">Learn More</font></a></p>
 </header>
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 10px" id="about">
-  <h1 class="w3-center" style="font-family: pixel-title-font; font-size: 50px;">ABOUT ME</h2>
+  <h2 class="w3-center" style="font-family: pixel-title-font; font-size: 50px;">ABOUT ME</h2>
 
   <br>
-  <br>
 
-  <p class="w3-large" style="margin-left: 25px">
-        This is where I keep my personal profile, such as my projects, competitive programming endeavours, and resume. In the future, I may also upload some tools I have used to improve my programming skills.</p>
-  <br>
-  
-  <p class="w3-large" style="margin-left: 25px">
-    As of right now, I'm in my final year of highschool and I'm excited to further increase my knowledge of computer science and mathematics. I am spending much of my high school career on competitive programming, solving over 300 problems on websites like DMOJ, Codingbat, and USACO. On my GitHub, I've uploaded solutions to the various problems I have solved and I hope to keep adding to the list I have right now. Feel free to visit my GitHub to learn more.</p>
-  
-  <br>
-  <p class="w3-large" style="margin-left: 25px">
-    I hope you stick around and check out some of the things here!</p>
+  <p class="w3-large" style="margin: 50px">
+        This is where I keep my personal profile, such as my projects, competitive programming endeavours, and resume. 
+        In the future, I may also upload some tools/projects I have used to improve my programming skills. 
+        
+        <br><br><br>
+
+        As of right now, I'm at Carleton University to further increase my knowledge of 
+        computer science and mathematics. I have spent much of the past few years on competitive programming, solving over 
+        300 problems on websites like DMOJ, Codingbat, and USACO. On my GitHub, I've uploaded solutions to the various problems I 
+        have solved and I hope to keep adding to the list I have right now. Feel free to visit my GitHub to learn more. 
+        
+        <br><br><br>
+
+        I hope you stick around and check out some of the things here!
+  </p>
 </div>
 
 <!-- Footer -->
@@ -128,6 +135,7 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
 </script>
 
 </body>
